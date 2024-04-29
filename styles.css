@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.top-container {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(18, 50px); /* 18 columns to accommodate all groups */
+    grid-template-rows: auto; /* Adjust row height automatically */
+    gap: 5px;
+    padding: 10px;  /* Add padding to match the top spacing */
+}
+
+.card {
+    width: 48px; /* slightly smaller than the grid column to fit with gap */
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Existing color categories */
+.alkali-metal { background-color: #ff6666; }
+.alkaline-earth-metal { background-color: #f4c2c2; }
+.lanthanide { background-color: #ffbfff; }
+.actinide { background-color: #ff99cc; }
+.transition-metal { background-color: #f1e189; }
+.post-transition-metal { background-color: #cccccc; }
+.metalloid { background-color: #9cb071; }
+.nonmetal { background-color: #89b6b2; }
+.halogen { background-color: #c2f0c2; }
+.noble-gas { background-color: #8babbe; }
+.unknown { background-color: #d9d9d9; }
