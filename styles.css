@@ -45,14 +45,14 @@ body, html {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(18, 50px); /* 18 columns to accommodate all groups */
-    grid-template-rows: auto; /* Adjust row height automatically */
+    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: auto;
     gap: 5px;
-    padding: 10px;  /* Add padding to match the top spacing */
+    padding: 10px;
 }
 
 .card {
-    width: 48px; /* slightly smaller than the grid column to fit with gap */
+    width: 48px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -69,7 +69,7 @@ body, html {
     transform: scale(1.1);
 }
 
-/* Existing color categories */
+/* Color coding for different categories */
 .alkali-metal { background-color: #ff6666; }
 .alkaline-earth-metal { background-color: #f4c2c2; }
 .lanthanide { background-color: #ffbfff; }
@@ -81,3 +81,30 @@ body, html {
 .halogen { background-color: #c2f0c2; }
 .noble-gas { background-color: #8babbe; }
 .unknown { background-color: #d9d9d9; }
+
+/* Responsive styling for smaller screens */
+@media (max-width: 800px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .legend {
+        flex-direction: column; /* Stack legend items vertically */
+        align-items: center; /* Center-align legend items */
+        margin-bottom: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .legend-item {
+        margin: 5px 0;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(9, 40px); /* Fewer, narrower columns */
+        gap: 3px; /* Reduce spacing between elements */
+    }
+
+    .card {
+        width: 38px; /* Narrower cards for smaller screens */
+        height: 38px;
+    }
+}
