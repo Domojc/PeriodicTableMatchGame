@@ -12,7 +12,7 @@ body, html {
 .top-container {
     text-align: center;
     width: 100%;
-    padding: 40px 0; /* Increase padding to provide more space at the top */
+    padding: 60px 0; /* Increase padding to provide more space at the top */
 }
 
 .header {
