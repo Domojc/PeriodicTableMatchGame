@@ -12,7 +12,7 @@ body, html {
 .top-container {
     text-align: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0; /* Increase padding to provide more space at the top */
 }
 
 .header {
@@ -48,7 +48,7 @@ body, html {
     grid-template-columns: repeat(18, 50px);
     grid-template-rows: auto;
     gap: 5px;
-    padding: 10px;
+    padding: 10px;  /* Add padding to match the top spacing */
 }
 
 .card {
